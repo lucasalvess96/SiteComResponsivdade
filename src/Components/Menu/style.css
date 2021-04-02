@@ -1,0 +1,109 @@
+.menu-header2{
+    background: #0082e6;
+    position: fixed;
+    width: 100%;  
+    /* top: 0; */
+    /* z-index: 99; */
+    /* overflow: hidden; */
+  }
+  
+  .menu-header2 .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 980px;
+    margin: auto;
+  }
+  
+  .menu-header2 .container h2{/*aqui que faz aumentar a lugar do menu em cim e embaixo*/
+    color: white;
+    width: 150px;
+    margin-left: 20px;
+    padding: 15px 0;
+  }
+  
+  .menu-header2 .nav-header2 ul{
+    display: flex;
+  }
+  
+  .menu-header2 .nav-header2 ul li{
+    list-style: none;
+  }
+  
+  .menu-header2 .nav-header2 ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    transition: all 250ms linear 0s;
+    font-size: 0.8rem;
+    margin: 0.9rem;
+  }
+  
+  .menu-header2 .nav-header2 ul li a:hover{
+    color: #2c3e50; 
+  }
+  
+  #check{
+    display: none;
+  }
+  
+  .checkbtn{
+    color: white;
+    font-size: 1.8rem;
+    line-height: 5rem;
+    margin-right: 2.5rem;
+    float: right;
+    cursor: pointer;
+    display: none;
+  }
+  
+  @media(max-width: 560px){
+    /* label do botao hamburguer essa essa propiedade nao aparece as 3 barrinhas */
+    .checkbtn{
+      display: block;
+    }
+  
+  /* nesse ul deixa o menu pronto mas sem efeito */
+    ul{
+      /* faz com apareça todos A do menu,*/
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      background: #2c3e50;
+      top: 5rem;
+      left: -100%;
+      transition: 0.5s;
+      text-align: center;
+      display: block;
+    }
+  
+  /* some com os menu */
+    nav ul li {
+      display: block;
+      margin: 2.1rem;
+    }
+  
+    nav ul li a{
+      font-size: 1.25rem;
+      line-height: 1.8rem;
+      text-decoration: none;
+    }
+  
+    a:hover{
+      background: none;
+      color: #0082e6;
+    }
+  
+    .menu-header2 .nav-header2 ul{
+      display: flex;
+      flex-direction: column;
+    }
+  
+    /* evento de click */
+    #check:checked ~ ul{
+      left: 0;
+    }
+  }
+  
+  
