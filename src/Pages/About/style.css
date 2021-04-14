@@ -1,4 +1,128 @@
-.flex-item h2{
+/* .flex-item h2{
     margin-top: 100px;
     margin-left: 50px;
+} */
+
+#about-aside{
+    /* width: 188vw; */
+    height: 100vh;
+    position: relative; /* aqui é para o link to*/
+    display: flex;
+    z-index: -1;
+}
+
+#about-aside aside{
+    width: 148px;
+    background: #2d4c64;
+    /* padding: 80px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#about-aside aside h2 {
+    font-size: 40px;
+    font-weight: 888;
+    line-height: 42px;
+    margin-top: 64px;
+    color:white;
+    text-align: center;
+}
+
+#about-aside aside p{
+    color: white;
+    line-height: 28px;
+    margin-top: 24px;
+    text-align: center;
+}
+
+#about-aside aside footer{
+    display: flex;
+    flex-direction: column;
+    line-height: 24px;
+    text-align: center;
+    color: white;
+}
+
+#about-aside aside footer strong{
+    font-weight: 888;
+}
+
+#about-aside .link-homeback{
+    position: absolute;
+    right: 48px;
+    bottom: 48px;
+    width: 64px;
+    height: 64px;
+    background: #2d4c64;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+#about-aside .link-homeback:hover{
+    background: #1578c4;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: tomato;
+}
+
+main article img{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    margin-top: 36px;
+    padding: 12px;
+}
+main h2{
+    margin-top: -22px;
+    margin-bottom: 8px;
+}
+main h3{
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+main .dados{
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+    margin-top: 4px;
+}
+
+main .separacaoInf{
+    border: solid 1px;
+    color: rgb(233, 233, 233);
+    width: 100%;
+}
+
+main .infoescolar{
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+}
+
+main .conhecimento{
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+}
+
+main .git{
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+}
+
+
+main .linkedin{
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
 }
